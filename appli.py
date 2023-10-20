@@ -21,8 +21,8 @@ prenom = str(input("Indiquez votre prenom : "))
 time = datetime.datetime.now()
 
 def calculImc(poids,taille,pseudo):
-    taille_m = taille / 100  # Conversion de cm en mètres
-    imc = poids / (taille_m * taille_m)  # Calcul de l'IMC
+    taille_m = taille / 100  # conversion de cm en mètres
+    imc = poids / (taille_m * taille_m) 
     if imc < 18.5:
         print(f"Ton IMC est insuffisant {pseudo}, il faut manger plus que ça !")
     elif imc > 18.5 and imc < 24.9:
